@@ -12,10 +12,7 @@ module.exports = {
     ],
     //Config options on how to interpret requires imports
     resolve: {
-        extensions: ["", ".ts", ".tsx", ".js", ".jsx"],
-        root: [
-            path.resolve('./')
-        ]
+        extensions: ["", ".ts", ".tsx", ".js", ".jsx"]
     },
     //Server Configuration options
     devServer:{

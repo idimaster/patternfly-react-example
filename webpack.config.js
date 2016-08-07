@@ -11,9 +11,6 @@ module.exports = {
     //Config options on how to interpret requires imports
     resolve: {
         extensions: ["", ".ts", ".tsx", ".js", ".jsx"],
-        root: [
-            path.resolve('./')
-        ],
         modulesDirectories: ['node_modules']
     },
     output: {
