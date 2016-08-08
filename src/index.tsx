@@ -1,10 +1,9 @@
 import './app.less';
 import './index.html';
-import * as jQuery from 'jquery';
-(global as any).$ = jQuery;
-(global as any).jQuery = jQuery;
+import * as $ from 'jquery';
 require('bootstrap');
-require('patternfly/dist/js/patternfly');
+require('bootstrap/js/popover');
+let pt = require('patternfly/dist/js/patternfly');
 //$().setupVerticalNavigation(true);
 
 import * as React from 'react';
