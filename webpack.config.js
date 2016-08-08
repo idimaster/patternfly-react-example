@@ -53,11 +53,6 @@ module.exports = {
     plugins: [
         failPlugin,
         new ExtractTextPlugin("style.css"),
-        new webpack.ProvidePlugin({
-            $: "jquery",
-            jQuery: "jquery",
-            "window.jQuery": "jquery"
-        }),
         new WebpackNotifierPlugin({ alwaysNotify: true })
     ],
     debug: true,

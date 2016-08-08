@@ -1,10 +1,11 @@
 import './app.less';
 import './index.html';
-import * as $ from 'jquery';
+import * as jQuery from 'jquery';
+(global as any).$ = jQuery;
+(global as any).jQuery = jQuery;
 require('bootstrap');
 require('bootstrap/js/popover');
-let pt = require('patternfly/dist/js/patternfly');
-//$().setupVerticalNavigation(true);
+require('patternfly/dist/js/patternfly');
 
 import * as React from 'react';
 import { render } from 'react-dom';
@@ -26,3 +27,5 @@ const App = React.createClass({
 
 
 render(<App/>, document.getElementById('app-container'));
+
+$().setupVerticalNavigation(true);

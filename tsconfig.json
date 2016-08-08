@@ -9,7 +9,7 @@
     "declaration": true,
     "outDir": "build/ts/",
     "moduleResolution": "node",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": false
   },
   "exclude": [
     "node_modules",

@@ -1155,7 +1155,6 @@ interface JQueryStatic {
  * The jQuery instance members
  */
 interface JQuery {
-    setupVerticalNavigation(f: boolean): any;
     /**
      * Register a handler to be called when Ajax requests complete. This is an AjaxEvent.
      *
