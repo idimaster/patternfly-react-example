@@ -5,7 +5,8 @@ import * as React from 'react';
 
 import { Navbar as INavbar, VNavbarDecorator, Brand } from 'patternfly-react'
 
-export class NavbarImpl extends React.Component<any, any> implements INavbar {
+@VNavbarDecorator
+export class Navbar extends React.Component<any, any> implements INavbar {
     getBrand(): React.ReactElement<any> {
         return <Brand/>
     }
@@ -61,6 +62,3 @@ export class NavbarImpl extends React.Component<any, any> implements INavbar {
         ]
     }
 }
-
-@VNavbarDecorator
-export class Navbar extends NavbarImpl {}
