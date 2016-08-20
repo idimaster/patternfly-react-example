@@ -20,27 +20,27 @@ export class Navbar extends React.Component<any, any> implements NavbarStore {
 
     getRightPanelElements() {
         return [
-            <NavInfoList name='Notification' store={() => {
+            <NavInfoList key={1} name='Notification' store={() => {
                 return [
                 {name: 'Modified Datasources ExampleDS'},
                 {name: 'Test Message'},
                 {name: 'Error: System Failure'}
                 ];
             }}/>,
-            <NavInfoList name='Notification' store={() => {
+            <NavInfoList key={2} name='Notification' store={() => {
                 return [
                 {name: 'Modified Datasouxccc vxvc dgfgg fg  fff ff f  dfggfhdh rces ExampleDS'},
                 {name: 'Test Message'},
                 {name: 'Error: System Failure'}
                 ];
             }}/>,
-            <NavDropDown name='Help' icon='pficon-help' store={() => {
+            <NavDropDown key={3} name='Help' icon='pficon-help' store={() => {
                 return [
                 {name: 'Help'},
                 {name: 'About'}
                 ];
             }}/>,
-            <NavDropDown name='User' icon='pficon-user' store={() => {
+            <NavDropDown key={4} name='User' icon='pficon-user' store={() => {
                 return [
                 {name: 'Preferences'},
                 {name: 'Logout'}
