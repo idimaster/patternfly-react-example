@@ -1,24 +1,22 @@
-import { Component, ReactElement } from 'react';
 import * as React from 'react';
-
 
 import { NavbarStore, VNavbar, Brand } from 'patternfly-react'
 
 @VNavbar
-export class Navbar extends Component<any, any> implements NavbarStore {
-    getBrand(): ReactElement<any> {
+export class Navbar extends React.Component<any, any> implements NavbarStore {
+    getBrand(): React.ReactElement<any> {
         return <Brand>
             <img className="navbar-brand-icon" src="/assets/img/logo-alt.svg" alt=""/><img className="navbar-brand-name" src="/assets/img/brand-alt.svg" alt="PatternFly Enterprise Application" />
         </Brand>
     }
 
-    getLeftPanelElements(): ReactElement<any>[] {
+    getLeftPanelElements(): React.ReactElement<any>[] {
         return [
             <li><a href="#" target="_blank" className="nav-item-iconic nav-item-iconic-new-window"><span title="Launch" className="fa fa-external-link"></span></a></li>
         ]
     }
 
-    getRightPanelElements(): ReactElement<any>[] {
+    getRightPanelElements(): React.ReactElement<any>[] {
         return [
             <li className="dropdown">
                 <a className="dropdown-toggle nav-item-iconic" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">

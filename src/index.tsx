@@ -9,9 +9,10 @@ require('patternfly/dist/js/patternfly');
 
 import * as React from 'react';
 import { render } from 'react-dom';
-import { Header, Sidebar } from 'patternfly-react';
+import { Header } from 'patternfly-react';
 
 import { Navbar } from './Navbar'
+import { Sidebar } from './Sidebar'
 
 class App extends React.Component<any, any> {
     render(): React.ReactElement<any> {
@@ -26,7 +27,6 @@ class App extends React.Component<any, any> {
         );
     }
 }
-
 
 render(<App/>, document.getElementById('app-container'));
 
