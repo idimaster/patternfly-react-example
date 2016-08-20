@@ -7,7 +7,9 @@ import { NavbarStore, VNavbar, Brand } from 'patternfly-react'
 @VNavbar
 export class Navbar extends Component<any, any> implements NavbarStore {
     getBrand(): ReactElement<any> {
-        return <Brand/>
+        return <Brand>
+            <img className="navbar-brand-icon" src="/assets/img/logo-alt.svg" alt=""/><img className="navbar-brand-name" src="/assets/img/brand-alt.svg" alt="PatternFly Enterprise Application" />
+        </Brand>
     }
 
     getLeftPanelElements(): ReactElement<any>[] {
