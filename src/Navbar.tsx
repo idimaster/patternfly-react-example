@@ -1,23 +1,22 @@
-/**
- * Created by Dmitry<dizumskiy@eisgroup.com> on 8/14/16.
- */
+import { Component, ReactElement } from 'react';
 import * as React from 'react';
 
-import { Navbar as INavbar, VNavbarDecorator, Brand } from 'patternfly-react'
 
-@VNavbarDecorator
-export class Navbar extends React.Component<any, any> implements INavbar {
-    getBrand(): React.ReactElement<any> {
+import { NavbarStore, VNavbar, Brand } from 'patternfly-react'
+
+@VNavbar
+export class Navbar extends Component<any, any> implements NavbarStore {
+    getBrand(): ReactElement<any> {
         return <Brand/>
     }
 
-    getLeft(): React.ReactElement<any>[] {
+    getLeftPanelElements(): ReactElement<any>[] {
         return [
             <li><a href="#" target="_blank" className="nav-item-iconic nav-item-iconic-new-window"><span title="Launch" className="fa fa-external-link"></span></a></li>
         ]
     }
 
-    getRight(): React.ReactElement<any>[] {
+    getRightPanelElements(): ReactElement<any>[] {
         return [
             <li className="dropdown">
                 <a className="dropdown-toggle nav-item-iconic" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
