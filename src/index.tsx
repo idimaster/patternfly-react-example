@@ -10,7 +10,7 @@ require('patternfly/dist/js/patternfly');
 import * as React from 'react';
 import { render } from 'react-dom';
 import { Header, VNavbar, NavItem, NavInfoList, NavDropDown, NavInfoItem, NavDropDownItem } from 'patternfly-react';
-import { VSidebar, SidebarItem, SidebarItemList, SidebarListItem } from 'patternfly-react';
+import { Sidebar, SidebarItem, SidebarItemList, SidebarListItem } from 'patternfly-react';
 
 class App extends React.Component<any, any> {
 
@@ -48,7 +48,7 @@ class App extends React.Component<any, any> {
                         </NavDropDown>
                     </VNavbar.RightPanel>
                 </VNavbar>
-                <VSidebar>
+                <Sidebar>
                     <SidebarItem icon='fa-dashboard' label='Dashboard'/>
                     <SidebarItem icon='fa-shield' label='Dolor'/>
                     <SidebarItemList icon='fa-space-shuttle' label='Ipsum'>
@@ -69,7 +69,7 @@ class App extends React.Component<any, any> {
                     </SidebarItemList>
                     <SidebarItem icon='fa-graduation-cap' label='Adipscing'/>
                     <SidebarItem icon='fa-gamepad' label='Lorem'/>
-                </VSidebar>
+                </Sidebar>
                 <div
                     className="container-fluid container-cards-pf container-pf-nav-pf-vertical container-pf-nav-pf-vertical-with-sub-menus   ">
                     <Header>Example</Header>
