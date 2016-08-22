@@ -10,8 +10,7 @@ require('patternfly/dist/js/patternfly');
 import * as React from 'react';
 import { render } from 'react-dom';
 import { Header, VNavbar, NavItem, NavInfoList, NavDropDown, NavInfoItem, NavDropDownItem } from 'patternfly-react';
-
-import { Sidebar } from './Sidebar'
+import { VSidebar, SidebarItem, SidebarItemList, SidebarListItem } from 'patternfly-react';
 
 class App extends React.Component<any, any> {
 
@@ -49,7 +48,28 @@ class App extends React.Component<any, any> {
                         </NavDropDown>
                     </VNavbar.RightPanel>
                 </VNavbar>
-                <Sidebar></Sidebar>
+                <VSidebar>
+                    <SidebarItem icon='fa-dashboard' label='Dashboard'/>
+                    <SidebarItem icon='fa-shield' label='Dolor'/>
+                    <SidebarItemList icon='fa-space-shuttle' label='Ipsum'>
+                        <SidebarListItem label='Intellegam'/>
+                        <SidebarListItem label='Copiosae'/>
+                        <SidebarListItem label='Patrioque'/>
+                    </SidebarItemList>
+                    <SidebarItemList icon='fa-paper-plane' label='Amet'>
+                        <SidebarListItem label='A Intellegam'/>
+                        <SidebarListItem label='A Copiosae'/>
+                        <SidebarListItem label='A Patrioque'/>
+
+                    </SidebarItemList>
+                    <SidebarItemList icon='fa-space-shuttle' label='Ipsum3'>
+                        <SidebarListItem label='I Intellegam'/>
+                        <SidebarListItem label='I Copiosae'/>
+                        <SidebarListItem label='I Patrioque'/>
+                    </SidebarItemList>
+                    <SidebarItem icon='fa-graduation-cap' label='Adipscing'/>
+                    <SidebarItem icon='fa-gamepad' label='Lorem'/>
+                </VSidebar>
                 <div
                     className="container-fluid container-cards-pf container-pf-nav-pf-vertical container-pf-nav-pf-vertical-with-sub-menus   ">
                     <Header>Example</Header>
