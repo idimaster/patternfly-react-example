@@ -59,26 +59,26 @@ class App extends React.Component<any, any> {
                     </VNavbar.RightPanel>
                 </VNavbar>
                 <Sidebar>
-                    <SidebarItem icon='fa-dashboard' label='Dashboard' route='#1'/>
-                    <SidebarItem icon='fa-shield' label='Dolor' route='#2'/>
+                    <SidebarItem icon='fa-dashboard' label='Dashboard' onSelect={this.handleTopMenu} payload={{command: 'dashboard'}}/>
+                    <SidebarItem icon='fa-shield' label='Dolor' onSelect={this.handleTopMenu} payload={{command: 'dolor'}}/>
                     <SidebarItemList icon='fa-space-shuttle' label='Ipsum'>
-                        <SidebarListItem label='Intellegam' route='#31'/>
-                        <SidebarListItem label='Copiosae' route='#32'/>
-                        <SidebarListItem label='Patrioque' route='#33'/>
+                        <SidebarListItem label='Intellegam' onSelect={this.handleTopMenu} payload={{command: 'Intellegam'}}/>
+                        <SidebarListItem label='Copiosae' onSelect={this.handleTopMenu} payload={{command: 'Copiosae'}}/>
+                        <SidebarListItem label='Patrioque' onSelect={this.handleTopMenu} payload={{command: 'Patrioque'}}/>
                     </SidebarItemList>
                     <SidebarItemList icon='fa-paper-plane' label='Amet'>
-                        <SidebarListItem label='A Intellegam' route='#2'/>
-                        <SidebarListItem label='A Copiosae' route='#2'/>
-                        <SidebarListItem label='A Patrioque' route='#2'/>
+                        <SidebarListItem label='A Intellegam' onSelect={this.handleTopMenu} payload={{command: 'A ahelp'}}/>
+                        <SidebarListItem label='A Copiosae' onSelect={this.handleTopMenu} payload={{command: 'A help'}}/>
+                        <SidebarListItem label='A Patrioque' onSelect={this.handleTopMenu} payload={{command: 'A help'}}/>
 
                     </SidebarItemList>
                     <SidebarItemList icon='fa-space-shuttle' label='Ipsum3'>
-                        <SidebarListItem label='I Intellegam' route='#2'/>
-                        <SidebarListItem label='I Copiosae' route='#2'/>
-                        <SidebarListItem label='I Patrioque' route='#2'/>
+                        <SidebarListItem label='I Intellegam' onSelect={this.handleTopMenu} payload={{command: 'I help'}}/>
+                        <SidebarListItem label='I Copiosae' onSelect={this.handleTopMenu} payload={{command: 'I help'}}/>
+                        <SidebarListItem label='I Patrioque' onSelect={this.handleTopMenu} payload={{command: 'I help'}}/>
                     </SidebarItemList>
-                    <SidebarItem icon='fa-graduation-cap' label='Adipscing' route='#2'/>
-                    <SidebarItem icon='fa-gamepad' label='Lorem' route='#2'/>
+                    <SidebarItem icon='fa-graduation-cap' label='Adipscing' onSelect={this.handleTopMenu} payload={{command: 'adipscing'}}/>
+                    <SidebarItem icon='fa-gamepad' label='Lorem' onSelect={this.handleTopMenu} payload={{command: 'lorem'}}/>
                 </Sidebar>
                 <div
                     className="container-fluid container-cards-pf container-pf-nav-pf-vertical container-pf-nav-pf-vertical-with-sub-menus   ">
@@ -91,6 +91,7 @@ class App extends React.Component<any, any> {
 }
 
 
-render(<App/>, document.getElementById('app-container'));
+render(<App/>, document.getElementById('app-container'), () => {
+    $().setupVerticalNavigation(false);
+});
 
-$().setupVerticalNavigation(true);
