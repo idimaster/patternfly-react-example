@@ -14,10 +14,19 @@ import {Sidebar, SidebarItem, SidebarItemList, SidebarListItem} from 'patternfly
 import {CommandPayload} from 'patternfly-react';
 
 
-class App extends React.Component<any, any> {
+class App extends React.Component<any, {active: string}> {
+    constructor(props : any){
+        super(props);
+        this.state = { active: 'dashboard' };
+    }
 
     private handleTopMenu = (event: CommandPayload) => {
         alert(event.command);
+    };
+
+    private handleSideMenu = (event: CommandPayload) => {
+        //alert(event.command);
+        this.setState({active: event.command})
     };
 
     private handleClear = (id: string) => {
@@ -59,26 +68,26 @@ class App extends React.Component<any, any> {
                     </VNavbar.RightPanel>
                 </VNavbar>
                 <Sidebar>
-                    <SidebarItem icon='fa-dashboard' label='Dashboard' onSelect={this.handleTopMenu} payload={{command: 'dashboard'}}/>
-                    <SidebarItem icon='fa-shield' label='Dolor' onSelect={this.handleTopMenu} payload={{command: 'dolor'}}/>
-                    <SidebarItemList icon='fa-space-shuttle' label='Ipsum'>
-                        <SidebarListItem label='Intellegam' onSelect={this.handleTopMenu} payload={{command: 'Intellegam'}}/>
-                        <SidebarListItem label='Copiosae' onSelect={this.handleTopMenu} payload={{command: 'Copiosae'}}/>
-                        <SidebarListItem label='Patrioque' onSelect={this.handleTopMenu} payload={{command: 'Patrioque'}}/>
+                    <SidebarItem active={this.state.active == 'dashboard'} icon='fa-dashboard' label='Dashboard' onSelect={this.handleSideMenu} payload={{command: 'dashboard'}}/>
+                    <SidebarItem active={this.state.active == 'dolor'} icon='fa-shield' label='Dolor' onSelect={this.handleSideMenu} payload={{command: 'dolor'}}/>
+                    <SidebarItemList active={this.state.active == 'ipsum'} icon='fa-space-shuttle' label='Ipsum'>
+                        <SidebarListItem label='Intellegam' onSelect={this.handleSideMenu} payload={{command: 'ipsum', payload: 'Intellegam'}}/>
+                        <SidebarListItem label='Copiosae' onSelect={this.handleSideMenu} payload={{command: 'ipsum', payload: 'Copiosae'}}/>
+                        <SidebarListItem label='Patrioque' onSelect={this.handleSideMenu} payload={{command: 'ipsum', payload: 'Patrioque'}}/>
                     </SidebarItemList>
-                    <SidebarItemList icon='fa-paper-plane' label='Amet'>
-                        <SidebarListItem label='A Intellegam' onSelect={this.handleTopMenu} payload={{command: 'A ahelp'}}/>
-                        <SidebarListItem label='A Copiosae' onSelect={this.handleTopMenu} payload={{command: 'A help'}}/>
-                        <SidebarListItem label='A Patrioque' onSelect={this.handleTopMenu} payload={{command: 'A help'}}/>
+                    <SidebarItemList active={this.state.active == 'amet'} icon='fa-paper-plane' label='Amet'>
+                        <SidebarListItem label='A Intellegam' onSelect={this.handleSideMenu} payload={{command: 'amet', payload: 'A ahelp'}}/>
+                        <SidebarListItem label='A Copiosae' onSelect={this.handleSideMenu} payload={{command: 'amet', payload: 'A help'}}/>
+                        <SidebarListItem label='A Patrioque' onSelect={this.handleSideMenu} payload={{command: 'amet', payload: 'A help'}}/>
 
                     </SidebarItemList>
-                    <SidebarItemList icon='fa-space-shuttle' label='Ipsum3'>
-                        <SidebarListItem label='I Intellegam' onSelect={this.handleTopMenu} payload={{command: 'I help'}}/>
-                        <SidebarListItem label='I Copiosae' onSelect={this.handleTopMenu} payload={{command: 'I help'}}/>
-                        <SidebarListItem label='I Patrioque' onSelect={this.handleTopMenu} payload={{command: 'I help'}}/>
+                    <SidebarItemList active={this.state.active == 'ipsum3'} icon='fa-space-shuttle' label='Ipsum3'>
+                        <SidebarListItem label='I Intellegam' onSelect={this.handleSideMenu} payload={{command: 'ipsum3', payload: 'I help'}}/>
+                        <SidebarListItem label='I Copiosae' onSelect={this.handleSideMenu} payload={{command: 'ipsum3', payload: 'I help'}}/>
+                        <SidebarListItem label='I Patrioque' onSelect={this.handleSideMenu} payload={{command: 'ipsum3', payload: 'I help'}}/>
                     </SidebarItemList>
-                    <SidebarItem icon='fa-graduation-cap' label='Adipscing' onSelect={this.handleTopMenu} payload={{command: 'adipscing'}}/>
-                    <SidebarItem icon='fa-gamepad' label='Lorem' onSelect={this.handleTopMenu} payload={{command: 'lorem'}}/>
+                    <SidebarItem active={this.state.active == 'adipscing'} icon='fa-graduation-cap' label='Adipscing' onSelect={this.handleSideMenu} payload={{command: 'adipscing'}}/>
+                    <SidebarItem active={this.state.active == 'lorem'} icon='fa-gamepad' label='Lorem' onSelect={this.handleSideMenu} payload={{command: 'lorem'}}/>
                 </Sidebar>
                 <div
                     className="container-fluid container-cards-pf container-pf-nav-pf-vertical container-pf-nav-pf-vertical-with-sub-menus   ">
