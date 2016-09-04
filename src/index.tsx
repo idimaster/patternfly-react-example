@@ -98,6 +98,8 @@ class App extends React.Component<any, {active: string}> {
                         <ListItem>
                             <ListCheckBox/>
                             <ListActions>
+                                <button className="btn btn-default">Action</button>
+                                <button className="btn btn-default">Action2</button>
                                 <ListActionItem label='action1'/>
                                 <ListActionItem label='action2'/>
                                 <ListActionItem label='action3'/>
@@ -107,6 +109,7 @@ class App extends React.Component<any, {active: string}> {
                         <ListItem>
                             <ListCheckBox/>
                             <ListActions>
+                                <button className="btn btn-default">Action</button>
                                 <ListActionItem label='action1'/>
                                 <ListActionItem label='action2'/>
                                 <ListActionItem label='action3'/>
@@ -116,6 +119,7 @@ class App extends React.Component<any, {active: string}> {
                         <ListItem>
                             <ListCheckBox/>
                             <ListActions>
+                                <button className="btn btn-default">Action</button>
                                 <ListActionItem label='action1'/>
                                 <ListActionItem label='action2'/>
                                 <ListActionItem label='action3'/>
@@ -125,6 +129,7 @@ class App extends React.Component<any, {active: string}> {
                         <ListItem>
                             <ListCheckBox/>
                             <ListActions>
+                                <button className="btn btn-link">Action</button>
                                 <ListActionItem label='action1'/>
                                 <ListActionItem label='action2'/>
                                 <ListActionItem label='action3'/>

@@ -20,7 +20,7 @@ module.exports = {
         historyApiFallback: {
             index: '/'
         },
-        devtool: 'source-map',
+        devtool: 'inline-source-map',
         hot: true,        //Live-reload
         inline: true,
         port: 3000        //Port Number
@@ -71,5 +71,5 @@ module.exports = {
         new WebpackNotifierPlugin({ alwaysNotify: true })
     ],
     debug: true,
-    devtool: 'cheap-module-eval-source-map'
+    devtool: 'inline-source-map'
 };
