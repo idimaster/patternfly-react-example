@@ -13,6 +13,8 @@ import {Header, VNavbar, NavItem, NavInfoList, NavDropDown, NavInfoItem, NavDrop
 import {Sidebar, SidebarItem, SidebarItemList, SidebarListItem} from 'patternfly-react';
 import {CommandPayload} from 'patternfly-react';
 
+import {ListView, ListItem, CheckBox as ListCheckBox, ListActions, ListActionItem} from 'patternfly-react';
+
 
 class App extends React.Component<any, {active: string}> {
     constructor(props : any){
@@ -92,6 +94,45 @@ class App extends React.Component<any, {active: string}> {
                 <div
                     className="container-fluid container-cards-pf container-pf-nav-pf-vertical container-pf-nav-pf-vertical-with-sub-menus   ">
                     <Header>Example</Header>
+                    <ListView>
+                        <ListItem>
+                            <ListCheckBox/>
+                            <ListActions>
+                                <ListActionItem label='action1'/>
+                                <ListActionItem label='action2'/>
+                                <ListActionItem label='action3'/>
+                                <ListActionItem label='action4'/>
+                            </ListActions>
+                        </ListItem>
+                        <ListItem>
+                            <ListCheckBox/>
+                            <ListActions>
+                                <ListActionItem label='action1'/>
+                                <ListActionItem label='action2'/>
+                                <ListActionItem label='action3'/>
+                                <ListActionItem label='action4'/>
+                            </ListActions>
+                        </ListItem>
+                        <ListItem>
+                            <ListCheckBox/>
+                            <ListActions>
+                                <ListActionItem label='action1'/>
+                                <ListActionItem label='action2'/>
+                                <ListActionItem label='action3'/>
+                                <ListActionItem label='action4'/>
+                            </ListActions>
+                        </ListItem>
+                        <ListItem>
+                            <ListCheckBox/>
+                            <ListActions>
+                                <ListActionItem label='action1'/>
+                                <ListActionItem label='action2'/>
+                                <ListActionItem label='action3'/>
+                                <ListActionItem label='action4'/>
+                            </ListActions>
+                        </ListItem>
+                    </ListView>
+
                     {this.props.children}
                 </div>
             </div>
