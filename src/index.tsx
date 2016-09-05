@@ -139,6 +139,18 @@ class App extends React.Component<any, {active: string}> {
                                         The following snippet of text is <a href="#">rendered as link text</a>.
                                     </ListMainInfo.Description.Text>
                                 </ListMainInfo.Description>
+                                <ListMainInfo.Additional>
+                                    <span className="pficon pficon-cluster"></span>
+                                    <strong>8</strong> Clusters
+                                </ListMainInfo.Additional>
+                                <ListMainInfo.Additional>
+                                    <span className="pficon pficon-cluster"></span>
+                                    <strong>4</strong> Hosts
+                                </ListMainInfo.Additional>
+                                <ListMainInfo.Additional>
+                                    <span className="pficon pficon-cluster"></span>
+                                    <strong>834</strong> Nodes
+                                </ListMainInfo.Additional>
                             </ListMainInfo>
                             <ListActions>
                                 <button className="btn btn-link">Action</button>
