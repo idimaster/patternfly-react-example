@@ -13,7 +13,7 @@ import {Header, VNavbar, NavItem, NavInfoList, NavDropDown, NavInfoItem, NavDrop
 import {Sidebar, SidebarItem, SidebarItemList, SidebarListItem} from 'patternfly-react';
 import {CommandPayload} from 'patternfly-react';
 
-import {ListView, ListItem, CheckBox as ListCheckBox, ListActions, ListActionItem} from 'patternfly-react';
+import {ListView, ListItem, CheckBox as ListCheckBox, ListActions, ListActionItem, ListMainInfo} from 'patternfly-react';
 
 
 class App extends React.Component<any, {active: string}> {
@@ -97,6 +97,9 @@ class App extends React.Component<any, {active: string}> {
                     <ListView>
                         <ListItem>
                             <ListCheckBox/>
+                            <ListMainInfo>
+
+                            </ListMainInfo>
                             <ListActions>
                                 <button className="btn btn-default">Action</button>
                                 <button className="btn btn-default">Action2</button>
@@ -128,6 +131,15 @@ class App extends React.Component<any, {active: string}> {
                         </ListItem>
                         <ListItem>
                             <ListCheckBox/>
+                            <ListMainInfo>
+                                <ListMainInfo.Left><span className="fa fa-plane list-view-pf-icon-sm"></span></ListMainInfo.Left>
+                                <ListMainInfo.Description>
+                                    <ListMainInfo.Description.Header>Event One</ListMainInfo.Description.Header>
+                                    <ListMainInfo.Description.Text>
+                                        The following snippet of text is <a href="#">rendered as link text</a>.
+                                    </ListMainInfo.Description.Text>
+                                </ListMainInfo.Description>
+                            </ListMainInfo>
                             <ListActions>
                                 <button className="btn btn-link">Action</button>
                                 <ListActionItem label='action1'/>
