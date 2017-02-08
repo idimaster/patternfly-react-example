@@ -39,8 +39,8 @@ class App extends React.Component<any, {active: string}> {
         return (<div>
                 <VNavbar>
                     <VNavbar.Brand>
-                        <img className="navbar-brand-icon" src="/assets/img/logo-alt.svg" alt=""/><img
-                        className="navbar-brand-name" src="/assets/img/brand-alt.svg"
+                        <img className="navbar-brand-icon" src="http://www.patternfly.org/assets/img/logo-alt.svg" alt=""/><img
+                        className="navbar-brand-name" src="http://www.patternfly.org/assets/img/brand-alt.svg"
                         alt="PatternFly Enterprise Application"/>
                     </VNavbar.Brand>
                     <VNavbar.LeftPanel>
