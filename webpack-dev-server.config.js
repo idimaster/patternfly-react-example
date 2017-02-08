@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const failPlugin = require('webpack-fail-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
+const OmitTildeWebpackPlugin = require('omit-tilde-webpack-plugin');
 
 module.exports = {
     entry: [
@@ -16,7 +17,7 @@ module.exports = {
     },
     //Server Configuration options
     devServer:{
-        contentBase: 'dist',  //Relative directory for base of server
+        contentBase: 'docs',  //Relative directory for base of server
         historyApiFallback: {
             index: '/'
         },
@@ -26,7 +27,7 @@ module.exports = {
         port: 3000        //Port Number
     },
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'docs'),
         publicPath: '/',
         filename: 'bundle.js'
     },
@@ -68,6 +69,7 @@ module.exports = {
         new webpack.NoErrorsPlugin(),
         failPlugin,
         new ExtractTextPlugin("style.css"),
+        new OmitTildeWebpackPlugin({deprecate: true}),
         new WebpackNotifierPlugin({ alwaysNotify: true })
     ],
     debug: true,

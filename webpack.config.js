@@ -3,6 +3,7 @@ const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const failPlugin = require('webpack-fail-plugin');
 const WebpackNotifierPlugin = require('webpack-notifier');
+const OmitTildeWebpackPlugin = require('omit-tilde-webpack-plugin');
 
 module.exports = {
     entry: [
@@ -14,7 +15,7 @@ module.exports = {
         modulesDirectories: ['node_modules']
     },
     output: {
-        path: path.join(__dirname, 'dist'),
+        path: path.join(__dirname, 'docs'),
         publicPath: '/',
         filename: 'bundle.js'
     },
@@ -53,6 +54,7 @@ module.exports = {
     plugins: [
         failPlugin,
         new ExtractTextPlugin("style.css"),
+        new OmitTildeWebpackPlugin({deprecate: true}),
         new WebpackNotifierPlugin({ alwaysNotify: true })
     ],
     debug: true,
