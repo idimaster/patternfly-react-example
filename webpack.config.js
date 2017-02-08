@@ -16,7 +16,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, 'docs'),
-        publicPath: '/',
+        publicPath: '/patternfly-react-example/',
         filename: 'bundle.js'
     },
     module: {
