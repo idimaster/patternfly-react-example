@@ -32,7 +32,7 @@
   font-style: normal;
   font-weight: 800;
   src: url(/patternfly-react-example/OpenSans-ExtraBold-webfont.eot);
-src: url(/patternfly-react-example/OpenSans-ExtraBold-webfont.eot?#iefix) format("embedded-opentype"), url(/patternfly-react-example/6ad396399f4022ccd1616cf11d0985be.woff) format("woff"), url(/patternfly-react-example/OpenSans-ExtraBold-webfont.ttf) format("truetype"), url(/patternfly-react-example/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold) format("svg");
+  src: url(/patternfly-react-example/OpenSans-ExtraBold-webfont.eot?#iefix) format("embedded-opentype"), url(/patternfly-react-example/6ad396399f4022ccd1616cf11d0985be.woff) format("woff"), url(/patternfly-react-example/OpenSans-ExtraBold-webfont.ttf) format("truetype"), url(/patternfly-react-example/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold) format("svg");
 }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
