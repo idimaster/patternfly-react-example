@@ -4,7 +4,7 @@
   "description": "Examples",
   "main": "src/index.js",
   "scripts": {
-    "webpack": "webpack  --display-error-details",
+    "webpack": "webpack  --display-error-details --define process.env.PUBLIC_URL='/patternfly-react-example'",
     "start": "webpack-dev-server --config webpack-dev-server.config.js  --colors"
   },
   "repository": {
