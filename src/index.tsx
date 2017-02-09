@@ -10,6 +10,7 @@ require('patternfly/dist/js/patternfly');
 import * as React from 'react';
 import {render} from 'react-dom';
 import {Router, Route, IndexRoute, browserHistory, withRouter} from 'react-router'
+import { useBasename } from 'history';
 
 import {VNavbar, NavItem, NavInfoList, NavDropDown, NavInfoItem, NavDropDownItem} from 'patternfly-react';
 import {Sidebar, SidebarItem, SidebarItemList, SidebarListItem} from 'patternfly-react';
@@ -89,7 +90,10 @@ class App extends React.Component<any, {active: string}> {
     }
 }
 
-render(<Router history={browserHistory}>
+// specify basename below if running in a subdirectory or set as "/" if app runs in root
+const appHistory = useBasename(() => browserHistory)({ basename: process.env.PUBLIC_URL })
+
+render(<Router history={appHistory}>
     <Route path="/" component={App}>
         <IndexRoute component={DashboardExample}/>
         <Route path="list" component={ListViewExample}/>
