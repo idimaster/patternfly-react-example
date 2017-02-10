@@ -91,7 +91,7 @@ class App extends React.Component<any, {active: string}> {
 }
 
 // specify basename below if running in a subdirectory or set as "/" if app runs in root
-const appHistory = useBasename(() => browserHistory)({ basename: process.env.PUBLIC_URL })
+const appHistory = useBasename(() => browserHistory)({ basename: '/patternfly-react-example' })
 
 render(<Router history={appHistory}>
     <Route path="/" component={App}>
