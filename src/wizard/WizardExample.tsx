@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {Wizard, WizardBody, WizardSteps, WizardButtons, Title, WizardRow, WizardSidebar, WizardMain, StepTitle} from 'patternfly-react'
+import {Wizard, WizardBody, WizardSteps, WizardButtons, Title, WizardRow, WizardSidebar, WizardMain, StepTitle} from 'patternfly-react-ts'
 
 export class WizardExample extends React.Component<any, any> {
     render(): React.ReactElement<any> {

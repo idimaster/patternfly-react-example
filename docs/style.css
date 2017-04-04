@@ -4,35 +4,90 @@
   font-style: normal;
   font-weight: 300;
   src: url(/patternfly-react-example/OpenSans-Light-webfont.eot);
-  src: url(/patternfly-react-example/OpenSans-Light-webfont.eot?#iefix) format("embedded-opentype"), url(/patternfly-react-example/45b47f3e9c7d74b80f5c6e0a3c513b23.woff) format("woff"), url(/patternfly-react-example/OpenSans-Light-webfont.ttf) format("truetype"), url(/patternfly-react-example/OpenSans-Light-webfont.svg#OpenSansLight) format("svg");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Light"), local("OpenSans-Light"), url(/patternfly-react-example/OpenSans-Light-webfont.eot?#iefix) format("embedded-opentype"),  url(/patternfly-react-example/ea284cc760cad1896d4c917f1e546210.woff2) format("woff2"),  url(/patternfly-react-example/3b3cbaef084e27f7fa05d9fe31afb287.woff) format("woff"),  url(/patternfly-react-example/OpenSans-Light-webfont.ttf) format("truetype"),  url(/patternfly-react-example/OpenSans-Light-webfont.svg#OpenSans) format("svg");
+  /* Legacy iOS */
 }
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
   src: url(/patternfly-react-example/OpenSans-Regular-webfont.eot);
-  src: url(/patternfly-react-example/OpenSans-Regular-webfont.eot?#iefix) format("embedded-opentype"), url(/patternfly-react-example/79515ad0788973c533405f7012dfeccd.woff) format("woff"), url(/patternfly-react-example/OpenSans-Regular-webfont.ttf) format("truetype"), url(/patternfly-react-example/OpenSans-Regular-webfont.svg#OpenSansRegular) format("svg");
+  /* IE9 Compat Modes */
+  src: local("Open Sans"), local("OpenSans"), url(/patternfly-react-example/OpenSans-Regular-webfont.eot?#iefix) format("embedded-opentype"),  url(/patternfly-react-example/6fd1f924cd0bea5d5f74a1365e12184d.woff2) format("woff2"),  url(/patternfly-react-example/60bdb28dc8230486c5b0e868c82fb5dc.woff) format("woff"),  url(/patternfly-react-example/OpenSans-Regular-webfont.ttf) format("truetype"),  url(/patternfly-react-example/OpenSans-Regular-webfont.svg#OpenSans) format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: url(/patternfly-react-example/OpenSans-LightItalic-webfont.eot);
+  /* IE9 Compat Modes */
+  src: local("Open Sans Light Italic"), local("OpenSansLight-Italic"), url(/patternfly-react-example/OpenSans-LightItalic-webfont.eot?#iefix) format("embedded-opentype"),  url(/patternfly-react-example/3ea4cffdf67ebf2ad373fb96b903065d.woff2) format("woff2"),  url(/patternfly-react-example/9c9017a313819aa54e959ffe8e7d27ea.woff) format("woff"),  url(/patternfly-react-example/OpenSans-LightItalic-webfont.ttf) format("truetype"),  url(/patternfly-react-example/OpenSans-LightItalic-webfont.svg#OpenSans) format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url(/patternfly-react-example/OpenSans-Italic-webfont.eot);
+  /* IE9 Compat Modes */
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url(/patternfly-react-example/OpenSans-Italic-webfont.eot?#iefix) format("embedded-opentype"),  url(/patternfly-react-example/f01a4402103c9ef9350607c0f739b49d.woff2) format("woff2"),  url(/patternfly-react-example/7aee35e0d937a1fa3456645603d200e6.woff) format("woff"),  url(/patternfly-react-example/OpenSans-Italic-webfont.ttf) format("truetype"),  url(/patternfly-react-example/OpenSans-Italic-webfont.svg#OpenSans) format("svg");
+  /* Legacy iOS */
 }
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
   src: url(/patternfly-react-example/OpenSans-Semibold-webfont.eot);
-  src: url(/patternfly-react-example/OpenSans-Semibold-webfont.eot?#iefix) format("embedded-opentype"), url(/patternfly-react-example/697574b47bcfdd2c45e3e63c7380dd67.woff) format("woff"), url(/patternfly-react-example/OpenSans-Semibold-webfont.ttf) format("truetype"), url(/patternfly-react-example/OpenSans-Semibold-webfont.svg#OpenSansSemibold) format("svg");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold-webfont"), url(/patternfly-react-example/OpenSans-Semibold-webfont.eot?#iefix) format("embedded-opentype"),  url(/patternfly-react-example/aa22ff6fd92ecdf402f09a8180354751.woff2) format("woff2"),  url(/patternfly-react-example/2418db91905ed032bf3a30ee72dd6a1a.woff) format("woff"),  url(/patternfly-react-example/OpenSans-Semibold-webfont.ttf) format("truetype"),  url(/patternfly-react-example/OpenSans-Semibold-webfont.svg#OpenSans) format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 600;
+  src: url(/patternfly-react-example/OpenSans-SemiboldItalic-webfont.eot);
+  /* IE9 Compat Modes */
+  src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic-webfont"), url(/patternfly-react-example/OpenSans-SemiboldItalic-webfont.eot?#iefix) format("embedded-opentype"),  url(/patternfly-react-example/ca4d226c2c041ce9d9e946e7f7eb297e.woff2) format("woff2"),  url(/patternfly-react-example/cc62fb5c139ff4ec74ef7b3474dcc7f2.woff) format("woff"),  url(/patternfly-react-example/OpenSans-SemiboldItalic-webfont.ttf) format("truetype"),  url(/patternfly-react-example/OpenSans-SemiboldItalic-webfont.svg#OpenSans) format("svg");
+  /* Legacy iOS */
 }
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
   src: url(/patternfly-react-example/OpenSans-Bold-webfont.eot);
-  src: url(/patternfly-react-example/OpenSans-Bold-webfont.eot?#iefix) format("embedded-opentype"), url(/patternfly-react-example/2e90d5152ce92858b62ba053c7b9d2cb.woff) format("woff"), url(/patternfly-react-example/OpenSans-Bold-webfont.ttf) format("truetype"), url(/patternfly-react-example/OpenSans-Bold-webfont.svg#OpenSansBold) format("svg");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url(/patternfly-react-example/OpenSans-Bold-webfont.eot?#iefix) format("embedded-opentype"),  url(/patternfly-react-example/7a1d4327518eab8c5600f4fdc520efcd.woff2) format("woff2"),  url(/patternfly-react-example/0d8fa9d9810a6543e922ee3d90abac25.woff) format("woff"),  url(/patternfly-react-example/OpenSans-Bold-webfont.ttf) format("truetype"),  url(/patternfly-react-example/OpenSans-Bold-webfont.svg#OpenSans) format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: url(/patternfly-react-example/OpenSans-BoldItalic-webfont.eot);
+  /* IE9 Compat Modes */
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url(/patternfly-react-example/OpenSans-BoldItalic-webfont.eot?#iefix) format("embedded-opentype"),  url(/patternfly-react-example/fba8b2a7052485cec44b825aaeb05d71.woff2) format("woff2"),  url(/patternfly-react-example/8642dbfe531a38f6ab836f629ff93485.woff) format("woff"),  url(/patternfly-react-example/OpenSans-BoldItalic-webfont.ttf) format("truetype"),  url(/patternfly-react-example/OpenSans-BoldItalic-webfont.svg#OpenSans) format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 800;
+  src: url(/patternfly-react-example/OpenSans-ExtraBoldItalic-webfont.eot);
+  /* IE9 Compat Modes */
+  src: local("Open Sans Extrabold Italic"), local("OpenSans-ExtraboldItalic"), url(/patternfly-react-example/OpenSans-ExtraBoldItalic-webfont.eot?#iefix) format("embedded-opentype"),  url(/patternfly-react-example/7789cb285e0fdd866795f0fb8f19264f.woff2) format("woff2"),  url(/patternfly-react-example/51c4ab203f9003ce49cc9e66b05c4968.woff) format("woff"),  url(/patternfly-react-example/OpenSans-ExtraBoldItalic-webfont.ttf) format("truetype"),  url(/patternfly-react-example/OpenSans-ExtraBoldItalic-webfont.svg#OpenSans) format("svg");
+  /* Legacy iOS */
 }
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 800;
   src: url(/patternfly-react-example/OpenSans-ExtraBold-webfont.eot);
-  src: url(/patternfly-react-example/OpenSans-ExtraBold-webfont.eot?#iefix) format("embedded-opentype"), url(/patternfly-react-example/6ad396399f4022ccd1616cf11d0985be.woff) format("woff"), url(/patternfly-react-example/OpenSans-ExtraBold-webfont.ttf) format("truetype"), url(/patternfly-react-example/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold) format("svg");
+  /* IE9 Compat Modes */
+  src: local("Open Sans Extrabold"), local("OpenSans-Extrabold"), url(/patternfly-react-example/OpenSans-ExtraBold-webfont.eot?#iefix) format("embedded-opentype"),  url(/patternfly-react-example/b91b03551cbc5aec3c2970794722f055.woff2) format("woff2"),  url(/patternfly-react-example/b40092f742715ad203dbbfaa37602688.woff) format("woff"),  url(/patternfly-react-example/OpenSans-ExtraBold-webfont.ttf) format("truetype"),  url(/patternfly-react-example/OpenSans-ExtraBold-webfont.svg#OpenSans) format("svg");
+  /* Legacy iOS */
 }
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -2593,7 +2648,20 @@ output {
 .form-control::-webkit-input-placeholder {
   color: #999;
 }
-.form-control::placeholder {
+.form-control:-moz-placeholder {
+  color: #999;
+  font-style: italic;
+}
+.form-control::-moz-placeholder {
+  color: #999;
+  font-style: italic;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #999;
+  font-style: italic;
+}
+.form-control::-webkit-input-placeholder {
   color: #999;
   font-style: italic;
 }
@@ -8931,11 +8999,18 @@ button.close {
   overflow: visible;
   clip: auto;
 }
+.text-overflow-pf {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: normal;
+}
 .alert {
   border-width: 1px;
   padding-left: 47px;
   padding-right: 14px;
   position: relative;
+  word-wrap: break-word;
 }
 .alert .alert-link {
   color: #0088ce;
@@ -9810,7 +9885,6 @@ fieldset[disabled] .pagination > li > span.active {
 .content-view-pf-pagination {
   background-color: #f5f5f5;
   border: 1px solid #d1d1d1;
-  border-top: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9819,6 +9893,9 @@ fieldset[disabled] .pagination > li > span.active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.content-view-pf-pagination.table-view-pf-pagination {
+  border-top: none;
 }
 .content-view-pf-pagination .form-group {
   -webkit-box-align: baseline;
@@ -9890,14 +9967,68 @@ fieldset[disabled] .pagination > li > span.active {
   border-color: #bbb;
   border-top-color: #bbb;
 }
-.panel-group .panel-heading {
+.panel-group .panel-default .panel-heading {
   background-image: -webkit-linear-gradient(top, #fafafa 0%, #ededed 100%);
   background-image: linear-gradient(to bottom, #fafafa 0%, #ededed 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffafafa', endColorstr='#ffededed', GradientType=0);
 }
-.panel-group .panel-heading + .panel-collapse .panel-body {
+.panel-group .panel-default .panel-heading + .panel-collapse .panel-body {
   border-top: 1px solid #d1d1d1;
+}
+.panel-group .panel-primary {
+  border-color: #39a5dc;
+}
+.panel-group .panel-primary .panel-heading {
+  background-color: #def0f9;
+}
+.panel-group .panel-primary + .panel-default {
+  border-top-color: #39a5dc;
+}
+.panel-group .panel-success {
+  border-color: #3f9c35;
+}
+.panel-group .panel-success .panel-heading {
+  background-color: #e9f4e9;
+}
+.panel-group .panel-success + .panel-default {
+  border-top-color: #3f9c35;
+}
+.panel-group .panel-success + .panel-primary {
+  border-top-color: #3f9c35;
+}
+.panel-group .panel-warning {
+  border-color: #ec7a08;
+}
+.panel-group .panel-warning .panel-heading {
+  background-color: #fdf2e5;
+}
+.panel-group .panel-warning + .panel-default {
+  border-top-color: #ec7a08;
+}
+.panel-group .panel-warning + .panel-primary {
+  border-top-color: #ec7a08;
+}
+.panel-group .panel-warning + .panel-success {
+  border-top-color: #ec7a08;
+}
+.panel-group .panel-danger {
+  border-color: #cc0000;
+}
+.panel-group .panel-danger .panel-heading {
+  background-color: #ffe6e6;
+}
+.panel-group .panel-danger + .panel-default {
+  border-top-color: #cc0000;
+}
+.panel-group .panel-danger + .panel-primary {
+  border-top-color: #cc0000;
+}
+.panel-group .panel-danger + .panel-success {
+  border-top-color: #cc0000;
+}
+.panel-group .panel-danger + .panel-warning {
+  border-top-color: #cc0000;
 }
 .panel-group .panel-title {
   font-weight: 500;
@@ -13240,7 +13371,7 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
 @font-face {
   font-family: "PatternFlyIcons-webfont";
   src: url(/patternfly-react-example/PatternFlyIcons-webfont.eot);
-  src: url(/patternfly-react-example/PatternFlyIcons-webfont.eot?#iefix) format("embedded-opentype"), url(/patternfly-react-example/PatternFlyIcons-webfont.ttf) format("truetype"), url(/patternfly-react-example/c342aa1457af4acbbb10a88696d72c12.woff) format("woff"), url(/patternfly-react-example/PatternFlyIcons-webfont.svg#PatternFlyIcons-webfont) format("svg");
+  src: url(/patternfly-react-example/PatternFlyIcons-webfont.eot?#iefix) format("embedded-opentype"), url(/patternfly-react-example/PatternFlyIcons-webfont.ttf) format("truetype"), url(/patternfly-react-example/796dc070009d7c9693e22881761033d7.woff) format("woff"), url(/patternfly-react-example/PatternFlyIcons-webfont.svg#PatternFlyIcons-webfont) format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -13258,11 +13389,11 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-.pficon-middleware:before {
-  content: "\E917";
-}
 .pficon-add-circle-o:before {
   content: "\E61B";
+}
+.pficon-arrow:before {
+  content: "\E929";
 }
 .pficon-build:before {
   content: "\E902";
@@ -13275,6 +13406,9 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
 }
 .pficon-blueprint:before {
   content: "\E915";
+}
+.pficon-chat:before {
+  content: "\E928";
 }
 .pficon-close:before {
   content: "\E60B";
@@ -13292,7 +13426,10 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
   content: "\E621";
 }
 .pficon-cpu:before {
-  content: "\E905";
+  content: "\E927";
+}
+.pficon-degraded:before {
+  content: "\E91B";
 }
 .pficon-delete:before {
   content: "\E611";
@@ -13306,9 +13443,12 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
 .pficon-enterprise:before {
   content: "\E906";
 }
+.pficon-equalizer:before {
+  content: "\E610";
+}
 .pficon-error-circle-o:before {
   color: #cc0000;
-  content: "\E61D";
+  content: "\E926";
 }
 .pficon-export:before {
   content: "\E616";
@@ -13342,10 +13482,22 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
   content: "\E615";
 }
 .pficon-info:before {
-  content: "\E604";
+  content: "\E92B";
+}
+.pficon-key:before {
+  content: "\E924";
+}
+.pficon-locked:before {
+  content: "\E923";
+}
+.pficon-unlocked:before {
+  content: "\E922";
 }
 .pficon-memory:before {
   content: "\E908";
+}
+.pficon-middleware:before {
+  content: "\E917";
 }
 .pficon-network:before {
   content: "\E909";
@@ -13361,17 +13513,23 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
   content: "\E914";
 }
 .pficon-project:before {
-  content: "\E622";
+  content: "\E905";
+}
+.pficon-rebalance:before {
+  content: "\E91C";
 }
 .pficon-refresh:before,
 .pficon-restart:before {
-  content: "\E613";
+  content: "\E617";
 }
 .pficon-regions:before {
   content: "\E90A";
 }
 .pficon-registry:before {
   content: "\E623";
+}
+.pficon-remove:before {
+  content: "\E611";
 }
 .pficon-replicator:before {
   content: "\E624";
@@ -13382,11 +13540,14 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
 .pficon-resource-pool:before {
   content: "\E90C";
 }
+.pficon-resources-almost-empty:before {
+  content: "\E91D";
+}
 .pficon-resources-almost-full:before {
   content: "\E912";
 }
 .pficon-resources-full:before {
-  content: "\E913";
+  content: "\E92A";
 }
 .pficon-route:before {
   content: "\E625";
@@ -13400,6 +13561,9 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
 .pficon-screen:before {
   content: "\E600";
 }
+.pficon-search:before {
+  content: "\E921";
+}
 .pficon-server:before {
   content: "\E90D";
 }
@@ -13412,6 +13576,12 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
 .pficon-settings:before {
   content: "\E610";
 }
+.pficon-spinner:before {
+  content: "\E614";
+}
+.pficon-spinner2:before {
+  content: "\E613";
+}
 .pficon-storage-domain:before {
   content: "\E90E";
 }
@@ -13419,7 +13589,7 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
   content: "\E916";
 }
 .pficon-thumb-tack-o:before {
-  content: "\E609";
+  content: "\E920";
 }
 .pficon-topology:before {
   content: "\E608";
@@ -13431,10 +13601,10 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
   content: "\E901";
 }
 .pficon-user:before {
-  content: "\E60E";
+  content: "\E91E";
 }
 .pficon-users:before {
-  content: "\E60F";
+  content: "\E91F";
 }
 .pficon-virtual-machine:before {
   content: "\E90F";
@@ -13444,7 +13614,7 @@ fieldset[disabled] .combobox-container .input-group-addon.active {
 }
 .pficon-warning-triangle-o:before {
   color: #ec7a08;
-  content: "\E61C";
+  content: "\E913";
 }
 .pficon-zone:before {
   content: "\E911";
@@ -13707,6 +13877,224 @@ a.disabled {
   color: #8b8d8f;
   cursor: not-allowed;
   text-decoration: none;
+}
+.list-pf {
+  border-bottom: 1px solid #ededed;
+}
+.list-pf-item {
+  border-color: #ededed;
+  border-left-color: #fff;
+  border-right-color: #fff;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom: none;
+}
+.list-pf-item:hover {
+  background-color: #fafafa;
+}
+.list-pf-item.active {
+  background-color: #ededed;
+  border-color: #bbb;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+.list-pf-expansion {
+  background-color: #fff;
+}
+.list-pf-container {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+.list-pf-expansion .list-pf-container {
+  border-top: 1px solid #bbb;
+}
+@media (min-width: 992px) {
+  .list-pf:not(.list-pf-stacked) .list-pf-container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.list-pf-chevron,
+.list-pf-select {
+  margin-right: 10px;
+}
+.list-pf-chevron + .list-pf-content,
+.list-pf-select + .list-pf-content {
+  border-left: 1px solid #d1d1d1;
+  padding-left: 20px;
+}
+.list-pf-chevron .fa,
+.list-pf-select .fa {
+  font-size: 22px;
+}
+.list-pf-content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  min-width: 0;
+}
+@media (min-width: 992px) {
+  .list-pf:not(.list-pf-stacked) .list-pf-content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.list-pf-left {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin-left: 0;
+  margin-right: 20px;
+}
+.list-pf-icon {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.list-pf-icon-bordered {
+  border-radius: 50%;
+  border: 2px solid #39a5dc;
+}
+.list-pf-icon-small {
+  font-size: 1.4em;
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+}
+.list-pf-content-wrapper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 0;
+}
+@media (min-width: 992px) {
+  .list-pf-content-wrapper {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .list-pf-content-wrapper > * + * {
+    margin-left: 40px;
+  }
+}
+.list-pf-stacked .list-pf-content-wrapper {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.list-pf-main-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-width: 0;
+}
+@media (min-width: 992px) {
+  .list-pf:not(.list-pf-stacked) .list-pf-main-content {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: auto;
+  }
+  .list-pf:not(.list-pf-stacked) .list-pf-main-content > * + * {
+    margin-left: 40px;
+  }
+}
+.list-pf-title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  font-weight: bold;
+  min-width: 0;
+  word-wrap: break-word;
+}
+.list-pf-description {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  min-width: 0;
+  word-wrap: break-word;
+}
+.list-pf-additional-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 31%;
+      flex-basis: 31%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.list-pf-actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin-left: 40px;
+}
+.list-pf-actions > * + * {
+  margin-left: 10px;
 }
 .list-view-pf .list-group-item {
   -webkit-box-align: start;
@@ -14924,6 +15312,7 @@ a.disabled {
   margin-top: 0;
 }
 .navbar-pf-vertical .nav .nav-item-iconic {
+  color: #d1d1d1;
   cursor: pointer;
   line-height: 1;
   max-height: 58px;
@@ -14932,6 +15321,7 @@ a.disabled {
 }
 .navbar-pf-vertical .nav .nav-item-iconic:hover,
 .navbar-pf-vertical .nav .nav-item-iconic:focus {
+  color: #fff;
   background-color: transparent;
 }
 .navbar-pf-vertical .nav .nav-item-iconic:hover .caret,
@@ -15738,6 +16128,20 @@ table.dataTable th:active {
   min-height: 40px;
   line-height: 40px;
 }
+.table-view-pf-colvis-menu > li {
+  padding: 5px 10px;
+}
+.table-view-pf-colvis-menu > li:hover {
+  background-color: #def3ff;
+}
+.table-view-pf-colvis-menu > li > input {
+  margin-top: 0;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.table-view-pf-colvis-menu > li > label {
+  margin-bottom: 0;
+}
 .table-view-pf-actions {
   background-color: #f1f1f1;
   height: 100%;
@@ -15779,12 +16183,17 @@ table.dataTable th:active {
 .bootstrap-datetimepicker-widget.dropdown-menu {
   left: 0!important;
   padding: 0;
-  top: 23px!important;
   width: calc(100% - 25px);
 }
 .bootstrap-datetimepicker-widget.dropdown-menu:before,
 .bootstrap-datetimepicker-widget.dropdown-menu:after {
   content: none;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.top {
+  margin-bottom: -1px;
+}
+.bootstrap-datetimepicker-widget.dropdown-menu.bottom {
+  margin-top: -1px;
 }
 .bootstrap-datetimepicker-widget .timepicker-hour {
   width: 100%;
@@ -15878,6 +16287,11 @@ table.dataTable th:active {
 }
 .toast-pf .toast-pf-action {
   margin-left: 15px;
+}
+.toast-pf .dropdown-kebab-pf .btn-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: text-bottom;
 }
 @media (min-width: 992px) {
   .toast-pf {
@@ -17168,6 +17582,9 @@ table.dataTable th:active {
   border: none;
   left: 0;
   right: 0;
+}
+.wizard-pf-contents textarea {
+  resize: vertical;
 }
 /* styles the content of a review page */
 .wizard-pf-review-steps {

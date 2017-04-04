@@ -12,9 +12,9 @@ import {render} from 'react-dom';
 import {Router, Route, IndexRoute, browserHistory, withRouter} from 'react-router'
 import { useBasename } from 'history';
 
-import {VNavbar, NavItem, NavInfoList, NavDropDown, NavInfoItem, NavDropDownItem} from 'patternfly-react';
-import {Sidebar, SidebarItem, SidebarItemList, SidebarListItem} from 'patternfly-react';
-import {CommandPayload} from 'patternfly-react';
+import {VNavbar, NavItem, NavInfoList, NavDropDown, NavInfoItem, NavDropDownItem} from 'patternfly-react-ts';
+import {Sidebar, SidebarItem, SidebarItemList, SidebarListItem} from 'patternfly-react-ts';
+import {CommandPayload} from 'patternfly-react-ts';
 
 import {DashboardExample} from './dashboard/DashboardExample';
 import {ListViewExample} from './list/ListViewExample';

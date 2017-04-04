@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import {ListView, ListItem, CheckBox as ListCheckBox, ListActions, ListActionItem, ListMainInfo} from 'patternfly-react';
+import {ListView, ListItem, CheckBox as ListCheckBox, ListActions, ListActionItem, ListMainInfo} from 'patternfly-react-ts';
 
 export class ListViewExample extends React.Component<any, any> {
     render(): React.ReactElement<any> {
